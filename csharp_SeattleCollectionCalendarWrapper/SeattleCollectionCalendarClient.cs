@@ -31,6 +31,7 @@ namespace SeattleCollectionCalendarWrapper
         {
             _client = client;
             _client.BaseAddress = BASE_URL;
+            _client.Timeout.Add(new TimeSpan(0, 3, 0));
         }
         #endregion Constructors
         
@@ -68,6 +69,7 @@ namespace SeattleCollectionCalendarWrapper
         /// a list of addresss that the specified address may represent.  When empty, the specified address
         /// could be input incorrectly or doesn't have collection account
         /// </returns>
+        /// <remarks>FYI: This is known to be a slow call.</remarks>
         public async Task<string[]> GetCcAddressAsync(string address)
         {
             string[] result = new string[0];

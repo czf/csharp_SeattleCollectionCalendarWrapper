@@ -6,11 +6,14 @@
     <Description>Wrapper for Seattle Collection Calendar API at http://www.seattle.gov/util/myservices/garbage/lookupcollectionday/.</Description>
     <PackageTags>Seattle.gov</PackageTags>
     <PackageId>czf.apiwrappers.seattle.collectioncalendar</PackageId>
+	<Title>Seattle Collection Calendar API Wrapper</Title>
     <Authors>czf</Authors>
     <Product />
     <Company />
     <AssemblyName>SeattleCollectionCalendarWrapper</AssemblyName>
     <RootNamespace>SeattleCollectionCalendarWrapper</RootNamespace>
+    <RepositoryUrl>https://github.com/czf/csharp_SeattleCollectionCalendarWrapper</RepositoryUrl>
+	<PackageProjectUrl>https://github.com/czf/csharp_SeattleCollectionCalendarWrapper</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>

@@ -2,6 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>Wrapper for Seattle Collection Calendar API at http://www.seattle.gov/util/myservices/garbage/lookupcollectionday/.</Description>
+    <PackageTags>Seattle.gov</PackageTags>
+    <PackageId>czf.apiwrappers.seattle.collectioncalendar</PackageId>
+    <Authors>czf</Authors>
+    <Product />
+    <Company />
+    <AssemblyName>SeattleCollectionCalendarWrapper</AssemblyName>
+    <RootNamespace>SeattleCollectionCalendarWrapper</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
 
 </Project>

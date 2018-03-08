@@ -95,7 +95,6 @@ namespace SeattleCollectionCalendarWrapper
         public string[] GetCcAddress(string address)
         {
             Task<string[]> responseTask = GetCcAddressAsync(address);
-            Task.WaitAll(responseTask);
             return responseTask.Result;
         }
 
@@ -123,7 +122,6 @@ namespace SeattleCollectionCalendarWrapper
             DateTimeOffset? start = null, DateTimeOffset? end = null)
         {
             Task<List<CollectionDate>> responseTask = GetCollectionDays(address: address, start: start, end: end);
-            Task.WaitAll(responseTask);
             return responseTask.Result;
         }
 
